@@ -23,9 +23,11 @@ public class PruebaCuenta {
         float cantidadDepositar = input.nextFloat();
         cuenta1.consignar(cantidadDepositar);
         System.out.print("Ingresar cantidad a retirar: $");
+        System.out.print(" ");
         float cantidadRetirar = input.nextFloat();
         cuenta1.retirar(cantidadRetirar);
         cuenta1.extractoMensual();
         cuenta1.imprimir();
+        input.close();
     }
 }
